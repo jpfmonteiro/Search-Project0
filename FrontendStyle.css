@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  margin:250px 0; // add top and bottom margin
+}
+p {
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 25px;
+ color: #8B0000;
+}
+form {
+  display: inline-block;
+}
+input[type=text] {
+  padding:10px;
+  margin:10px 0; // add top and bottom margin
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:15px;
+}
+.border-customized-input {
+  border: 2px solid #eee;
+}
+button {
+  /* usual styles */
+  margin:300px 0; // add top and bottom margin
+  padding:10px;
+  border:none;
+  background-color:#3F51B5;
+  font-weight:600;
+  border-radius:10px;
+  width:100%;
+  transition-duration:0.4s;
+}
+.button:hover {
+  background-color: #B0C4DE;
+  color: #fff;
+}
