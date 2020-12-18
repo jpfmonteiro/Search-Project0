@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="FrontendStyle.css">
+
 <head>
     <title>Advanced Search</title>
 </head>
 
 <body>
-    <div class="Page-Links"> 
+    <div class="Page-Links">
         <a href="Index.html">Web Search</a>
         <a href="Image-search.html">Image Search</a>
     </div>
-    <div class="Page-Body"> 
+    <div class="Page-Body">
         <p>Search Google (Advanced)!</p>
-        <form method="get" action="https://www.google.com/advanced_search">
-        <input type="text" name="q" /><br>
-        <input type="submit" value="Advanced Search" />
+        <form method="get" action="https://www.google.com/search">
+            <label for="all">Has all of this words:</label><br>
+            <input type="text" id="all" name="as_q" /><br>
+            <label for="exact">This exact word or phrase:</label><br>
+            <input type="text" id="exact" name="as_epq" /><br>
+            <label for="any">Has any of this words:</label><br>
+            <input type="text" id="any" name="as_oq" /><br>
+            <label for="none">Has none of this words:</label><br>
+            <input type="text" id="none" name="as_eq" /><br>
+            <input type="submit" name="btnK" value="Advanced Search" class="button">
+            <input type="submit" name="btnI" value="I am Feeling Lucky" class="button" />
         </form>
     </div>
 </body>
